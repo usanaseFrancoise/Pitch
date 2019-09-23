@@ -28,7 +28,17 @@
         </li>
             
             {% else %}
+            <li class="nav-item">
+         
+           
+             <a href="{{url_for('auth.login')}}" style="margin-right:30px " class="nav-link"> <strong style="color: black" >Log In</strong></a>
             
+            </li>
+                <li class="nav-item">
+                <a href="{{url_for('auth.signup')}}" style="margin-right:30px " class="nav-link"><strong  style="color: black" style="font-weight: bold">Sign Up</strong></a>
+            </li>
+            {% endif %}
+            </ul>
     </div>
 </nav>
 
